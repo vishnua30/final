@@ -1,38 +1,34 @@
-
-
-    <div id="whm" > 
-      
-      
-      <div class="tab">
-      <table class="center ">
-        <thead>
-          <tr>
-            
-          </tr>
-         <tr>
-            <th>S No.</th>
-            <th>Product Name</th>
-            <th>Product Code</th>
-            <th>Minimum Expected Stock</th>
-            <th>Threshold Defined</th>
-            <th>Current stock</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let d of data">
-                <td>{{d.S_No}}</td>
-                <td>{{d.p_name}}</td>
-                <td>{{d.p_code}}</td>
-                <td>{{d.p_minstock}}</td>
-                <td>{{d.p_thrdefined}}</td>
-                <td>{{d.currentstock}}</td>
-                <td><button>Send Email</button></td>
-              </tr>
-          
-  </tbody>
+<div class="tab">
+  <table class="center">
+    <thead>
+      <tr>
+        
+      </tr>
+      <tr>
+        <th>S No.</th>
+        <th>Product Name</th>
+        <th>Product Code</th>
+        <th>Minimum Expected Stock</th>
+        <th>Threshold Defined</th>
+        <th>Current stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let d of data" >
+        <td>{{d.S_No}}</td>
+        <td [ngClass]="{'low-stock': d.currentstock < d.p_thrdefined}">{{d.p_name}}</td>
+        <td>{{d.p_code}}</td>
+        <td>{{d.p_minstock}}</td>
+        <td>{{d.p_thrdefined}}</td>
+        <td [ngClass]="{'low-stock': d.currentstock < d.p_thrdefined}">{{d.currentstock}}</td>
+      </tr>
+    </tbody>
   </table>
-  </div>
-  <br>
-  </div>
-   
+</div>
 
+<marquee>
+  Products with low stock:
+  <span *ngFor="let d of data" [ngClass]="{'low-stock': d.currentstock < d.p_thrdefined}">
+    <span *ngIf="d.currentstock < d.p_thrdefined">{{d.p_name}} | </span>
+  </span>
+</marquee>

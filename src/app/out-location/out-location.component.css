@@ -4,10 +4,11 @@ table.center{
 }
 
 table {
-    table-layout: fixed;
+    /* table-layout: fixed; */
     border-collapse: collapse;
     width: 60%;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    margin: 0 auto;
     
   }
   

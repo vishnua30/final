@@ -180,6 +180,22 @@
       "date_of_po_insurance": "2023-03-29",
       "date_of_delivery": "2023-03-30",
       "id": 10
+    },
+    {
+      "Product_name": "",
+      "Product_code": "",
+      "Batch_no": "",
+      "length": "",
+      "breadth": "",
+      "height": "",
+      "product_weight": "",
+      "product_quantiy": "",
+      "supplier_name": "",
+      "supplier_location": "",
+      "prod_order_no": "",
+      "date_of_po_insurance": "",
+      "date_of_delivery": "",
+      "id": 11
     }
   ],
   "outboundForm": [
@@ -302,6 +318,72 @@
       "product_code": 88,
       "Delivery_loc": "bfnf",
       "id": 20
+    },
+    {
+      "product_name": " ed",
+      "product_code": 122,
+      "Delivery_loc": "dede",
+      "id": 21
+    },
+    {
+      "product_name": " ed",
+      "product_code": 122,
+      "Delivery_loc": "dede",
+      "id": 22
+    },
+    {
+      "product_name": "ju",
+      "product_code": 0,
+      "Delivery_loc": "ju",
+      "id": 23
+    },
+    {
+      "product_name": "vg",
+      "product_code": 8,
+      "Delivery_loc": "9",
+      "id": 24
+    },
+    {
+      "product_name": "vg",
+      "product_code": 8,
+      "Delivery_loc": "9",
+      "id": 25
+    },
+    {
+      "product_name": "bh",
+      "product_code": 12,
+      "Delivery_loc": "vg",
+      "id": 26
+    },
+    {
+      "product_name": "hi",
+      "product_code": 1,
+      "Delivery_loc": "hi",
+      "id": 27
+    },
+    {
+      "product_name": "ji",
+      "product_code": 1,
+      "Delivery_loc": "ji",
+      "id": 28
+    },
+    {
+      "product_name": "hi",
+      "product_code": 8,
+      "Delivery_loc": "hi",
+      "id": 29
+    },
+    {
+      "product_name": "hi",
+      "product_code": 1,
+      "Delivery_loc": "hi",
+      "id": 30
+    },
+    {
+      "product_name": "hi",
+      "product_code": 1,
+      "Delivery_loc": "j",
+      "id": 31
     }
   ],
   "reclocationForm": [
@@ -420,6 +502,9 @@
       "Shelf": 23,
       "active": true,
       "id": 15
+    },
+    {
+      "id": 16
     }
   ],
   "outloccomp": [

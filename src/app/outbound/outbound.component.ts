@@ -15,7 +15,8 @@ export class OutboundComponent {
   product_name!:string;
   product_no!:any;
   dellivey!:any;
-  list!:any
+  list!:any;
+  submitted = false;
 
   constructor(public outboundapi:OutboundapiService)
   {
@@ -25,6 +26,7 @@ export class OutboundComponent {
   }
   submit(obj:any)
   {
+    this.submitted = true;
     this.outboundapi.post(obj).subscribe((data)=>
     {
         this.list=JSON.stringify(data)

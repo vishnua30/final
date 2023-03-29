@@ -1,3 +1,11 @@
+.hide-delivery {
+    display: none;
+  }
+  
+.button-on-sub{
+    margin: 1rem;
+}
+
 h1{
     text-align: center;
 }
@@ -13,7 +21,11 @@ h1{
     
     
 }
-
+input{
+    /* display: inline; */
+    margin: 0 1rem 4rem;
+    display: inline-block;
+}
 button{
     margin: 2rem 0;
     text-align: center;
@@ -26,6 +38,8 @@ button{
 
 label{
     margin: 0 .5rem;
+    
+
 }
 
 @media screen and (max-width: 800px) {

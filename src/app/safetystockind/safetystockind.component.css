@@ -1,11 +1,19 @@
+.low-stock{
+  color: red;
+}
 
-
-
+marquee{
+  margin-top: 5rem;
+  font-size: 1rem;
+  background-color: rgba(192, 222, 23, 0.23);
+  padding: 2px;
+}
 
 table {
   /* background: hsl(252, 100%, 24%); */
   border-radius: 0.25em;
   border-collapse: collapse;
+  /* font-size: 1.25rem; */
   margin: .5em;
   width:80%;
 

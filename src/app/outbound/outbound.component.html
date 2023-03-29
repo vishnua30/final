@@ -4,7 +4,7 @@
 
 <div class="card">
 
-    <form #outboundForm="ngForm" (ngSubmit)="submit(outboundForm.value)"  style="text-align: center;" >
+    <form  #outboundForm="ngForm" (ngSubmit)="submit(outboundForm.value)"  style="text-align: center;" >
        
                     <label class="center" for="pname">Product name </label>
                     <input type="text" #product_name="ngModel" required name="product_name" ngModel>
@@ -13,17 +13,19 @@
                     <label class="center" for="pcode">Product code </label>
                     <input type="number"  #product_code="ngModel" required name="product_code" ngModel><br>
                 
-        <label for="fname"> Delivery Location </label><input type="text" #Delivery_loc="ngModel" required name="Delivery_loc" ngModel> 
+        <!-- <label for="fname"> Delivery Location </label><input type="text" #Delivery_loc="ngModel" required name="Delivery_loc" ngModel>  -->
+        <label for="fname" [ngClass]="{ 'hide-delivery': submitted }">Delivery Location</label>
+<input type="text" #Delivery_loc="ngModel" required name="Delivery_loc" ngModel [ngClass]="{ 'hide-delivery': submitted }">
+
         <div style="text-align: center">
             
             <router-outlet></router-outlet>
         </div>
         
          
-        <br><br>
-        <br><br>
+       
         
-        <button type="submit" value="submit" routerLink="outlocation" [disabled]="outboundForm.invalid">Add to Product Cart</button>
+        <button [ngClass]="{ 'button-on-sub': submitted }"type="submit" value="submit" routerLink="outlocation" [disabled]="outboundForm.invalid">Add to Product Cart</button>
     </form>
 
 </div>
